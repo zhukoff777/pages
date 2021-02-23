@@ -1,0 +1,37 @@
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.container.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: green;
+
+	& .header-contact__list li:nth-child(1) {
+		margin-bottom: 5px;
+	}
+
+	& .header-contact__link {
+		color: white;
+	}
+}
+
+// Container Hero
+.container.hero {
+	padding-top: 20vh;
+	text-align: center;
+}
+
+// .container {
+// 	display: flex;
+// 	justify-content: center;
+// 	padding-left: 20px;
+// 	padding-right: 20px;
+// 	margin: 0 auto;
+// 	width: 940px;
+// 	height: 100%;
+// }
