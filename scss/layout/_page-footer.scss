@@ -1,3 +1,35 @@
+// Footer Basic
+.page-footer {
+	background-color: rgb(49, 49, 49);
+}
+.footer-column:not(:last-child) {
+	margin-bottom: 40px;
+}
+.footer-logo__link {
+	display: block;
+	width: 180px;
+}
+.footer-contact__list li:not(:last-child) {
+	margin-bottom: 10px;
+	& span:not(:last-child) {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+.footer-contact__list a {
+	font-size: 22px;
+	color: whitesmoke;
+}
+.copyright {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: black;
+	color: grey;
+}
+
+
+
 // /* Page Footer */
 // .page-footer {
 // 	background-color: black;
@@ -20,10 +52,7 @@
 // 	color: whitesmoke;
 // }
 
-// .footer-logo__link {
-// 	display: block;
-// 	width: 160px;
-// }
+
 
 // .footer-contact__list li {
 // 	margin-bottom: 8px;
