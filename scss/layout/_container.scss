@@ -15,7 +15,6 @@
 		width: 1200px;
 	}
 }
-
 // Container Header
 .container.header {
 	display: flex;
@@ -33,7 +32,6 @@
 		color: white;
 	}
 }
-
 // Container Hero
 .container.hero {
 	width: 80%;
@@ -43,9 +41,16 @@
 		width: 40%;
 	}
 }
-
 // Container Footer
 .container.footer {
 	padding-top: 40px;
 	padding-bottom: 40px;
+	
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: space-between;
+		padding-left: 30px;
+		padding-right: 70px;
+	
+	}
 }

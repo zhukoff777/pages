@@ -5,7 +5,6 @@
 .about-img__thumb:nth-child(1) {
 	margin-bottom: 20px;
 }
-
 // Gallery
 .gallery-list {
 	.gallery-item__thumb {
@@ -22,9 +21,7 @@
 		}
 	}
 }
-
 @media screen and (min-width: 768px) {
-
 	// Gallery 768
 	.gallery-list {
 		display: flex;
@@ -45,10 +42,7 @@
 		}
 	}	
 }
-
-
 @media screen and (min-width: 1200px) {
-
 	// About 1200
 	.about-content__wrap {
 		display: flex;
@@ -84,6 +78,3 @@
 		}
 	}			
 }
-
-
-
