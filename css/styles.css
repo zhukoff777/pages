@@ -51,6 +51,10 @@ ul {
   width: 100%;
 }
 
+.section.mainpage {
+  height: 100vh;
+}
+
 .section.hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,6 +136,11 @@ ul {
 
 .container.header .header-contact__link {
   color: white;
+}
+
+.container.mainpage {
+  text-align: center;
+  padding-top: 30vh;
 }
 
 .container.hero {
