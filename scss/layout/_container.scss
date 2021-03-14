@@ -22,7 +22,6 @@
 	align-items: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: green;
 
 	& .header-contact__list li:nth-child(1) {
 		margin-bottom: 5px;
@@ -40,11 +39,14 @@
 	
 // Container Hero
 .container.hero {
-	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 	text-align: center;
 	
 	@media screen and(min-width: 1200px) {
-		width: 40%;
+		width: 100%;
 	}
 }
 // Container Footer
