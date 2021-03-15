@@ -32,7 +32,7 @@
 						elit. Laborum eveniet nisi, ea commodi error libero necessitatibus a laboriosam hic saepe
 						placeat!
 					</p>
-					<button class="hero-content__button">
+					<button class="hero-content__button" data-modal-open>
 						<p>Оставить заявку</p>
 					</button>
 				</div>
@@ -218,6 +218,15 @@
 		</div>
 		<p class="copyright">Project Pages &#169; 2021</p>
 	</footer>
-</body>
+	<!-- Modal -->
+<div class="backdrop is-hidden" data-modal>
+	<div class="modal">
+		<button class="close-modal" data-modal-close>x</button>
+		<p>Hi from modal</p>
+	</div>
+</div>
 
+<!-- JS modal -->
+<script src="./js/modal.js"></script>
+</body>
 </html>
