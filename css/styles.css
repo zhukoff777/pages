@@ -17,6 +17,10 @@ body {
   margin: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   width: 100%;
@@ -234,7 +238,7 @@ ul {
   }
 }
 
-.hero-content__wrap .hero-content__button {
+.hero-content__wrap .open-modal-btn {
   padding: 15px 30px;
   font-weight: 500;
   text-transform: uppercase;
@@ -246,12 +250,12 @@ ul {
   cursor: pointer;
 }
 
-.hero-content__wrap .hero-content__button:hover {
+.hero-content__wrap .open-modal-btn:hover {
   background-color: tomato;
 }
 
 @media screen and (min-width: 414px) {
-  .hero-content__wrap .hero-content__button {
+  .hero-content__wrap .open-modal-btn {
     padding: 20px 40px;
     font-size: 20px;
   }
@@ -376,6 +380,16 @@ ul {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .backdrop .modal {
   margin: 0 auto;
   max-width: 500px;
@@ -392,4 +406,22 @@ ul {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: tomato;
+  color: white;
+}
+
+.close-modal-btn:hover {
+  background-color: teal;
 }

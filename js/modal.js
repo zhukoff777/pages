@@ -5,11 +5,22 @@
 		modal: document.querySelector("[data-modal]"),
 	};
 
-	refs.openModalBtn.addEventListener("click", toggleModal);
-	refs.closeModalBtn.addEventListener("click", toggle);
+	// const openModalBtn = 5;
 
-	function toggleModal() {
+	// console.log(openModalBtn);
+	// console.log(refs.closeModalBtn);
+	// console.log(refs.modal);
+	// console.log("модалка", openModalBtn);
+	
+
+	refs.openModalBtn.addEventListener("click", toggleModal);
+	refs.closeModalBtn.addEventListener("click", toggleModal);
+
+	function toggleModal(event) {
 		document.body.classList.toggle("modal-open");
 		refs.modal.classList.toggle("is-hidden");
+		console.log("клик по кнопке: ", event.target);
 	}
+
+	// console.log("модалка", openModalBtn, toggleModal);
 })();
