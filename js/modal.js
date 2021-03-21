@@ -12,7 +12,7 @@
 	// console.log(refs.modal);
 	// console.log("модалка", openModalBtn);
 	
-
+ 
 	refs.openModalBtn.addEventListener("click", toggleModal);
 	refs.closeModalBtn.addEventListener("click", toggleModal);
 

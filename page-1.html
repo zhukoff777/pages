@@ -30,7 +30,7 @@
 						<h1 class="hero-content__title">Page 1</h1>
 						<p class="hero-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 							Doloremque earum eaque distinctio. Quis quod cumque, similique aut odio modi natus?</p>
-						<button class="hero-content__button">
+						<button class="open-modal-btn" data-modal-open>
 							<p>Оставить заявку</p>
 						</button>
 					</div>
@@ -179,6 +179,16 @@
 		</div>
 		<p class="copyright">Project Pages &#169; 2021</p>
 	</footer>
+	<!-- Modal -->
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<button class="close-modal-btn" data-modal-close>&#215;</button>
+			<p> First page modal</p>
+		</div>
+	</div>
+
+	<!-- Js modal -->
+	<script src="./js/modal.js"></script>
 </body>
 
 </html>
