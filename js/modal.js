@@ -4,14 +4,6 @@
 		closeModalBtn: document.querySelector("[data-modal-close]"),
 		modal: document.querySelector("[data-modal]"),
 	};
-
-	// const openModalBtn = 5;
-
-	// console.log(openModalBtn);
-	// console.log(refs.closeModalBtn);
-	// console.log(refs.modal);
-	// console.log("модалка", openModalBtn);
-	
  
 	refs.openModalBtn.addEventListener("click", toggleModal);
 	refs.closeModalBtn.addEventListener("click", toggleModal);
@@ -22,5 +14,9 @@
 		console.log("клик по кнопке: ", event.target);
 	}
 
-	// console.log("модалка", openModalBtn, toggleModal);
+	// const title2 = document.querySelector('.js-content-title');
+	// const title2 = document.querySelector('#js-content-title');
+	// const title2 = document.getElementById('js-content-title');
+	console.log(title2);
+	console.log(document);
 })();

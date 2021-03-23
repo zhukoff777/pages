@@ -41,7 +41,7 @@
 			<div class="container about">
 				<div class="about-content__wrap">
 					<div class="about-content">
-						<h2 class="content-title">About page 3</h2>
+						<h2 id="js-content-title" class="content-title js-content-title">About page 3</h2>
 						<p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro unde ex aut sed mollitia!</p>
 						<p class="content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta qui sed omnis eum quisquam impedit, repellat animi doloremque fugiat exercitationem in, nesciunt, harum deserunt adipisci ex earum! Magnam deleniti accusamus debitis deserunt officiis ipsum assumenda aperiam impedit illo, hic qui praesentium, eveniet error neque ipsam eum minima est distinctio sequi ipsa quaerat delectus? Voluptas suscipit tempore labore reiciendis nihil.</p>
 						<p class="content-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, eaque magni! Distinctio soluta totam id accusantium porro incidunt saepe doloremque!</p>
@@ -216,15 +216,30 @@
 		</div>
 		<p class="copyright">Project Pages &#169; 2021</p>
 	</footer>
+
 	<!-- Modal -->
-<div class="backdrop is-hidden" data-modal>
-	<div class="modal">
-		<button class="close-modal-btn" data-modal-close>&#215;</button>
-		<p>Hi from modal</p>
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<button class="close-modal-btn" data-modal-close>&#215;</button>
+			<form class="form" id="index-form">
+              <div class="form_group">
+                <input class="form_input" type="text" name="name" placeholder=" " required="">
+                <!-- <label class="form_label">Имя</label> -->
+              </div>
+              <div class="form_group">
+                <input class="form_input" type="tel" name="phone" placeholder=" " required="">
+                <!-- <label class="form_label">Телефон</label> -->
+              </div>
+              <button type="submit" class="form_button">Отправить заявку</button>
+            </form>
+		</div>
 	</div>
-</div>
 
 <!-- JS modal -->
 <script src="./js/modal.js"></script>
+
+<!-- js form -->
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="/js/index-form.js"></script>
 </body>
 </html>
